@@ -705,11 +705,10 @@ div.entrar{
       margin-left: 0;
     }
     
-   .android-funld .android-fundo h1{
-    color: #FFFFFF;
-    margin-top: 30px;
-    font-weight: 700;
-   }
+     
+      .hover-nav .hover-link{
+       color: #1107fe;
+      } 
    }
    
    *::-webkit-scrollbar{
