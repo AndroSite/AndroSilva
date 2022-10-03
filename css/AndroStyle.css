@@ -23,15 +23,7 @@ button.navbar-toggler i.bi-list{
 li.list-group-item:hover{
   background-color: rgba(67, 64, 64, 0.142)!important;
 }
-div.container-fluid{
-  background-color: #00e0fe;
-  margin-top: -580px;
-  height: 150px;
-  color: #f8f9fa;
-  font-family: 'Lora', serif;
-  box-shadow: 0px 0px 5px black;
-}
-.modal-title{
+ .modal-title{
   font-family: 'Lora', serif;
   font-weight: 800;
   text-align: center;
@@ -62,37 +54,30 @@ div.offcanvas-header{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .position-fled{
-    position: fixed; 
-    z-index: 99999;
-  }
-  .android-funld{
-    list-style: none;
-  }
 
-  .index-link{
-    margin-left: -10px;
+  .fluto-auto{  
+    width: 100%; 
+    height: 80px;
+    z-index: 9999999;
   }
-  
-  .index{
+  .hover-nav,.hover-link:hover{
+   color: #171717;
+  } 
+   .hover-nav .hover-link:hover{
+     background-color: #1107fe;
+     border-radius: 10%;
+     font-weight: 400;
     color: #FFFFFF;
-    z-index: 9999;
-  }
-  div.col-rgb, a.index-color{
-    z-index: 9999;
-  }
+   } 
   .section-intro{
   margin-bottom: 40px;
   } 
-  
   .section-intro,.divider{
     margin: auto;
     height: 3px;
     width: 80px;
-    
     background: linear-gradient(to right,#00e0fe, #1107fe);
   } 
-  
   
   div.list-group, a.list-group-item{
     font-size: 17px;
@@ -106,21 +91,7 @@ div.offcanvas-header{
     font-weight: 800;
   }
   /* Menus */
-  ul.navbar-nav, .nav-item .nav-link{ 
-    color: #0c0c0c;
-    font-weight: 400;
-  }
-  
-  .nav-item .nav-link:hover{ 
-    background-color: #0a58ca;
-    color: #FFFFFF;
-  }
-  
-  ul.navbar-nav .nav-item .link-col{ 
-    font-size: 18px;
-    font-weight: 700;
-    color: #1107fe;
-  }
+   
   
   /* button automaati */
   .carousel-control-prev{
@@ -180,7 +151,7 @@ div.offcanvas-header{
        left: 0;
        width: 100%;
        height: 100%;
-       background: linear-gradient(to right,rgba(0, 224, 254, 0.616), rgba(15, 7, 254, 0.534));
+       background: linear-gradient(to right,#00e0fe95, #0f07fe76);
        z-index: -1;
      }
       
@@ -690,7 +661,14 @@ div.entrar{
       margin-left: -40px;
       width: 250px;
       box-shadow: 0px 0px 4px #0c0c0c;
-      
+    }
+    .android-funld{
+      position:absolute;
+      background: linear-gradient(to right,#00e0fe, #1107fe); 
+      height: 100%;
+      width: 300px;
+      margin-top: -60px;
+      border-radius: 0px 40% 40% 0px;
     }
     ul.navbar-nav, .nav-item .nav-link{ 
       color: #f8f9fa;
