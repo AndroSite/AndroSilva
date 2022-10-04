@@ -63,7 +63,7 @@ div.offcanvas-header{
     height: 120px;
   }
   .senction-top{
-    margin-top: 70px;
+    margin-top: 40px;
   }
   .hover-nav,.hover-link:hover{
    color: #171717;
@@ -195,7 +195,7 @@ div.offcanvas-header{
         line-height: 24px;
         border-radius: 10px;
         position: relative;
-        top: -750px;
+        top: -780px;
         left: 50px;
         box-sizing: border-box;
         cursor: pointer;
@@ -680,7 +680,7 @@ div.entrar{
       line-height: 24px;
       border-radius: 10px;
       position: relative;
-      top:-1940px;
+      top:-1980px;
       left:-220px;
       box-sizing: border-box;
       cursor: pointer;
