@@ -706,6 +706,17 @@ div.entrar{
       z-index: 99999;
     }
 
+    .voltar-mobile{
+      color: #1107fe;
+    }
+
+    .fluto-auto{
+      background: #f8f9fa;
+      width: 100%;
+      z-index: 999999;
+      height: 100px;
+    }
+
      .menu-mobele{
        background-color: #FFFFFF;
      }
