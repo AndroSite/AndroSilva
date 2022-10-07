@@ -57,55 +57,87 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar-example">
-  <nav class="navbar navbar-expand-lg  navbar-light bg-light position-fixed shadow">
-    <div class="container scrollspyHeading1">
-      <a class="navbar-brand" href="#">Menu</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto" role="tablist">
- 
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#SobreNos" scrollspyHeading1>Sobre Nós</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Novidades" scrollspyHeading2>Novidades</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Atualização"scrollspyHeading3>Atualização</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Smartphone"scrollspyHeading4>Smartphone</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Adroid-11"scrollspyHeading5>Android-11</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Sobre-Android"scrollspyHeading6>Sobre Android</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Conta-google"scrollspyHeading7>Conta-google</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Favoritos"scrollspyHeading8>Favoritos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Contactos"scrollspyHeading9>Contactos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#localização"scrollspyHeading10>Localização</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="" tabindex="-1" aria-disabled="true"></a>
-          </li>
+  <nav class="navbar navbar-light bg-light position-fixed shadow mt-3"> 
+      <nav class="navbar navbar-expand-lg  navbar-light bg-light position-fixed">
+        <div class="container-fluid ">
+          <span class="navbar-brand mb-0 h1">Menu</span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#SobreNos" scrollspyHeading1>Sobre Nós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Novidades" scrollspyHeading2>Novidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Atualização"scrollspyHeading3>Atualização</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Smartphone"scrollspyHeading4>Smartphone</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Adroid-11"scrollspyHeading5>Android-11</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Sobre-Android"scrollspyHeading6>Sobre Android</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Conta-google"scrollspyHeading7>Conta-google</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Favoritos"scrollspyHeading8>Favoritos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contactos"scrollspyHeading9>Contactos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#localização"scrollspyHeading10>Localização</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="" tabindex="-1" aria-disabled="true"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+  </nav>
+<div class="modal fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+          <li class="list-group-item">A fourth item</li>
+          <li class="list-group-item">And a fifth one</li>
+        </ul>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+          <li class="list-group-item">A fourth item</li>
+          <li class="list-group-item">And a fifth one</li>
         </ul>
       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
     </div>
-  </nav>
+  </div>
+</div>
     <header class="cabeçalho-principal">
         <section id="home" style="background-image: url(./pc_01.jpg);" class="bg-conver">
           <div class="overlay"></div>

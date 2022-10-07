@@ -51,9 +51,20 @@ div.offcanvas-header{
   .navbar{
 box-shadow: 0 12px 20px rgba(0, 0, 0,0.1);
 width: 100%;
-z-index: 999999;
+ z-index: 9999;
   } 
   
+  .modal{
+  width: 340px;
+  }
+
+  .modal-content{
+    width: 340px;
+    z-index: 999999;
+  }
+  .list-group-item:hover{
+    background-color: rgba( 59, 57, 57, 0.160)!important;
+  }
 
   /* button automaati */
   .btn{
@@ -630,7 +641,7 @@ div.entrar{
       line-height: 24px;
       border-radius: 10px;
       position: relative;
-      top:-1980px;
+      top:-2030px;
       left:-220px;
       box-sizing: border-box;
       cursor: pointer;
