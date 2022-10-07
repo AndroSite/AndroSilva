@@ -4,76 +4,23 @@
 
 body{
   background-color: #FFFFFF ;
-  margin: 0;
-  margin: 0;
+  line-height: 1.8;
 }
 section.cabeçalho-top{
   margin-top: 70px;
   width: 350px;
 }
-div.container-fluid button.navbar-toggler{
-  margin-left: -13%;
-  margin-top: 80px;
- 
-}
-button.navbar-toggler i.bi-list{
-  font-size: 20px;
-  color: #272262;
-}
-li.list-group-item:hover{
-  background-color: rgba(67, 64, 64, 0.142)!important;
-}
- .modal-title{
-  font-family: 'Lora', serif;
-  font-weight: 800;
-  text-align: center;
-  font-size: 17px;
-}
-span.navbar-brand{
-  margin-top: -80px;
-  margin-left: -10px;
-  font-family: Verdana;
-  font-weight: 900;
-  color: #272262;
-}
-div.modal-body a{
-  list-style: none;
-  text-decoration: none;
-  font-size: 15px;
-  color: #272262;
-  font-family: 'Roboto', sans-serif;
-}
-
+  
 div.offcanvas-header{
     background: linear-gradient(to right,#00e0fe, #1107fe); 
     color: #FFFFFF;
   }
   
-  .navbar-light .navbar-nav .nav-link .active .navbar-light .navbar-nav .show > .nav-link {
-    background: -webkit-linear-gradient( (#00e0fe), (#1107fe));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .fluto-auto{
-    background: linear-gradient(to right,#00e0fe, #1107fe);
-    width: 100%;
-    border-radius: 0px 0px 10% 10%;
-    z-index: 999999;
-    height: 120px;
-  }
+  
   .senction-top{
     margin-top: 40px;
   }
-  .hover-nav,.hover-link:hover{
-   color: #171717;
-  } 
-   .hover-nav .hover-link:hover{
-     background-color: #1107fe;
-     border-radius: 10%;
-     font-weight: 400;
-    color: #FFFFFF;
-   } 
+    
   .section-intro{
   margin-bottom: 40px;
   } 
@@ -89,16 +36,44 @@ div.offcanvas-header{
     font-weight: 800;
     color: #1bdf12;
   }
-  .navbar .navbar-brand{
-    color: #1107fe;
-    font-size: 25px;
-    font-family: verdana;
-    font-weight: 800;
-  }
-  /* Menus */
    
+.nav-item .nav-link{
+  color: #1107fe;
   
+}
+.nav-item .nav-link:hover{
+  color: #272262;
+  text-decoration: overline;
+  
+}
+
+  /* Menus */
+  .navbar{
+box-shadow: 0 12px 20px rgba(0, 0, 0,0.1);
+width: 100%;
+z-index: 999999;
+  } 
+  
+
   /* button automaati */
+  .btn{
+    padding: 14px 22px;
+    
+  }
+  .btn-primary{
+    background: linear-gradient(to right,#00e0fe, #1107fe);
+    border-radius: 100px;
+    border: none;
+    font-weight: 600;
+  }
+  .btn-main{
+    background: linear-gradient(to right,#00e0fe, #1107fe);
+    width: 150px;
+    border-radius: 100px;
+    border: none;
+    font-weight: 600;
+    color: #f8f9fa;
+  }
   .carousel-control-prev{
     margin-left: -6rem;
   }
@@ -160,17 +135,7 @@ div.offcanvas-header{
        z-index: -1;
      }
       
-    .margens-top{
-      margin-top: 80px;
-    }
     
-     .hero-senction{
-       min-height: 100vh;
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       
-     }
      div.button { 
         display: flex;
         align-items: center;
@@ -655,22 +620,7 @@ div.entrar{
     }
     
     
-    .mobales-color{
-      background: #1107fe; 
-      margin-left: -40px;
-      width: 250px;
-      box-shadow: 0px 0px 4px #0c0c0c;
-    }
-     
-    ul.navbar-nav, .nav-item .nav-link{ 
-      color: #f8f9fa;
-      font-weight: 400;
-    }
-    .nav-item .nav-link:hover{ 
-      background-color: #272262;
-      color: #FFFFFF;
-    }
-     
+      
     .Log{
       border: none;
       color: #f8f9fa;
@@ -688,44 +638,8 @@ div.entrar{
       text-shadow: 0px 0px 5px black;
       z-index: 99999;
     }
-    .index-link{
-      margin-left: 0;
-      margin-left: 0;
-    }
-
-    .container-fluid, .voltar-mobile{
-      margin-top: -30px;
-    }
-    
-    .fluto-auto{
-      height: 110px;
-    }
-
-    .button-mobile{
-      background-color: #4038a0;
-      z-index: 99999;
-    }
-
-    .voltar-mobile{
-      color: #1107fe;
-    }
-
-    .fluto-auto{
-      background: #f8f9fa;
-      width: 100%;
-      z-index: 999999;
-      height: 100px;
-    }
-
-     .menu-mobele{
-       background-color: #FFFFFF;
-     }
-      .hover-nav .hover-link{
-        margin-left:10px ;
-       color: #1107fe;
-       font-size: 20px;
-       z-index: 9999999;
-      } 
+     
+     
    }
    
    *::-webkit-scrollbar{
