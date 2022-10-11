@@ -688,8 +688,8 @@ div.entrar{
       line-height: 24px;
       border-radius: 10px;
       position: relative;
-      top:-2030px;
-      left:-120px;
+      top:-2050px;
+      left:10px;
       box-sizing: border-box;
       cursor: pointer;
       transition: all 400ms ease;
