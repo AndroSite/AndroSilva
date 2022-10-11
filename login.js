@@ -39,7 +39,7 @@ listaUser = JSON.parse(localStorage.getItem('listaUser'))
     })
  
     if (Usuario.value == userValid.user && Senha.value == userValid.senha) {
-        window.location.href="https://androsilva.github.io/AndroSilva/"
+        window.location.href="https://androsilva.github.io/AndroSilva/ferramenta.html"
         let token = Math.random().toString(16).substr(2) + Math.random().toString(16).substr(2)
         localStorage.setItem('token', token)
         localStorage.setItem('userLogado', JSON.stringify(userValid))
@@ -65,7 +65,7 @@ listaUser = JSON.parse(localStorage.getItem('listaUser'))
 
      if (localStorage.getItem('token') == null ) {
          alert('Você precisa estar logando para acessar esta página')
-         window.location.href="https://androsilva.github.io/AndroSilva/"
+         window.location.href="https://androsilva.github.io/AndroSilva/log.html"
      }
 
      function sair(){
