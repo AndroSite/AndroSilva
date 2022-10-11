@@ -17,6 +17,7 @@
   <script src="./animação.js" defer></script>
   <script src="./inventos.js" defer></script>
   <script src="./botao.js" defer></script>
+  <script src="./login.js" defer></script>
   <script src="./textoanimado.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,9 +63,10 @@
         <div class="container-fluid ">
           <div class="fundo-lateral">
             <div class="textos-lateral">
+              <h6 id="logado"></h6>
               <p class="text-white ms-2">Seja bem vindo no site</p>
               <h5 class="ms-2">Androsilva tudo sobre Android</h5>
-              <strong class="">Apoio Tecnico:</strong> <samp><a href="#localização" class="text-decoration-none" style="color: #f92727;" >Siga Redes</a></samp>
+            <button onclick="sair()" class="logado ms-1">Terminar cessão</button>
             </div>
           </div>
           <a class="navbar-brand" href="#" style="color:#04357e;"></a>
@@ -598,70 +600,124 @@ Chairman/CEO
             </div>
           </div>
         </section>
-           <h1 class="mt-2" style="color:#0d7dfd; font-size:18px;">Apresentamos o Android</h1>
-           <p data-aos="zoom-in-up" class="text-start text-break text-muted lh-base mt-4">O nosso site também revelou os novos smartphones Tecno e Itel , bem como o relógio inteligente, que serão lançados em uma segunda etapa.
-            Para 2023, a empresa anunciou que lançará o Ticno e itel Tablet.</p>
-           <p class="text-start text-break text-muted lh-base mt-4">
-          <strong> A versão do Android</strong>  mais recente oferece experiências ainda mais
-           personalizadas, seguras e simplificadas no seu dispositivo. Com uma IU
-           reformulada, novos recursos de privacidade e muito mais.
-           Tenha proteção e controle.
-          </p>
-          
-          <h1 class="mt-4"style="color:#0d7dfd; font-size:18px;">Sobre atualização e segurança</h1>
-              <p data-aos="zoom-in-up" class="text-start text-break text-muted lh-base mt-4">
-           Google Play Protect, atualizações de segurança regulares e controle sobre
-           como seus dados são compartilhados. Trabalhamos todos os dias para
-           proteger os mais de 2,5 bilhões de dispositivos Android ativos e para manter a
-           privacidade dos usuários.
-           Deixe o mundo acessível.
-           Leitores de tela, conversão de voz em texto e algumas das maneiras mais
-           recentes de conhecer o mundo do seu jeito.
-           Opções para trabalhar, jogar, fazer streaming em 5G e muito
-           mais.( <a href="">Veja na nossa loja</a> ) Globalmente, há mais de 24.000 smartphones e tablets
-           com o Android.</p>
-           
-  <section class="container ">
-    <div class="container">
-      <div class="row text-center">
-    <div class="card" style="width: 18rem;" data-aos="zoom-in-up">
-      <img src="./imagens/mqdefault (1).jpg" class="card-img-top img-fluid shadow " alt="...">
-      <div class="card-body">
-        <h5>Instalando USB no PC</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-      <div class="card-body">
-        <a href="#" class="card-link">download usb</a>
-        <a href="#" class="card-link">ferramenta flash</a>
-      </div>
-    </div>
-    Usando todos os processo no computador com USB
-    <div class="card" style="width: 18rem;"  data-aos="zoom-in-up">
-      <img src="./imagens/mqdefault (1).jpg" class="card-img-top img-fluid shadow " alt="...">
-      <div class="card-body">
-        <h5>Instalando firmware com PC</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-      <div class="card-body">
-        <a href="#" class="card-link">download drive usb mtk</a>
-        <a href="#" class="card-link">firmware</a>
-      </div>
-    </div>
-      </div>
-    </div>
-  </section>
-  
-  
-               <h1 class="mt-5 pt-4"style="color:#0d7dfd; font-size:18px;">As noticias sobre android12 </h1>
-               <p data-aos="zoom-in-up" class="text-start text-break text-muted lh-base mt-4">Traz para você uma combinação perfeita das últimas notícias sobre tópicos de 
-                 tendências e feeds personalizados para seus assuntos favoritos. Você pode acompanhar notícias,
-                  esportes, entretenimento, tópicos de estilo de vida e muito mais no android12.
-                   O conteúdo é servido por editores profissionais para todos os tópicos de seu interesse.
-                  Ele funciona com inteligência artificial para fornecer as atualizações personalizadas</p> <br>
-   
+            <section class="container">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="container">
+                      <h1 class="mt-2" style="color:#0d7dfd; font-size:18px;">Educação, ciência e tecnologia</h1>
+                      <h1>Educação</h1>
+           <p data-aos="zoom-in-up" class="text-start text-break text-muted lh-base mt-4"> 
+            O computador surgiu na década de 1940 e revolucionou o mundo, se
+            tornando hoje indispensável para toda a sociedade. Mesmo quem não
+            utiliza um computador, acaba interagindo com ele de forma indireta ou
+            imperceptível no dia-a-dia. No entanto, o computador, apesar de ser
+            uma máquina precisa e rápida, é, antes de tudo, uma máquina burra.
+            Requer cuidados constantes e não faz nada sozinho. Ao contrário de
+            uma máquina específica como uma geladeira, uma batedeira ou um
+            liquidificador, o computador é uma máquina universal e fará aquilo que
+            formos capazes de programá-lo a fazer.
+           </p>
+           <p>
+            Considere a lista das 10 maiores inovações tecnológicas fornecidas
+            abaixo e a ordene pela ordem que julgar de maior importância.
+           </p>
+           <div class="card">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><strong>Câmeras digitais</strong></li>
+              <li class="list-group-item"><strong>CDs/DVDs</strong></li>
+              <li class="list-group-item"><strong>Celular</strong></li>
+              <li class="list-group-item"><strong>Computador pessoal</strong></li>
+              <li class="list-group-item"><strong>e-mail</strong></li>
+            </ul>
+
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><strong>Fibra ótica</strong></li>
+              <li class="list-group-item"><strong> GPS</strong></li>
+              <li class="list-group-item"><strong> ID Tags</strong></li>
+              <li class="list-group-item"><strong>Internet</strong></li>
+              <li class="list-group-item"><strong> Laptops/PDAs</strong></li>
+            </ul>
+           </div>
+           <div class="container mt-2">
+            <h1 class="mt-2">CIÊNCIA</h1>
+            <p>
+              A ciência pode ser vista como a incursão do ser humano a um mundo
+misterioso. Conforme Bronowski “temos uma espécie de desejo
+ardente, uma ‘coceira’, uma necessidade de entender este universo
+misterioso e preservar e passar este conhecimento para novas gera-
+ções”. A ciência (scientia, epistémé) é portanto uma necessidade de
+conhecer as coisas do universo e descobrir como e por que o mundo
+é como é. <br>
+O que chamamos de ciência começou quando Galileu Galilei
+demonstrou que é a Terra que se move e não o sol.
+            </p>
+            <div class="card">
+              <h5>CIÊNCIA</h5>
+              <img src="./imagens/icon png/Investimento.jfif" class="mt-2  img-flaud shadow"  alt="">
+              <figcaption class="ms-2" >atualizadao por <strong>Abreus Silvano</strong>/25/ Outubro/2022</figcaption>
+            </div>
+            <a href="" class="btn btn-main mt-4" id="btn-main">Saiba mais</a>
+           </div>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="container">
+                      <h1 class="mt-2">Tecnologias</h1>
+                      <h5>COMUNICAÇÃO</h5>
+                      <p>
+                        Para Claude Shanon, que criou a Teoria Matemática da Comunicação
+há mais de 50 anos atrás, “o problema fundamental de comunicação
+é aquele de reproduzir em um lugar, seja exata ou aproximadamente,
+uma mensagem selecionada em um outro lugar”.
+Um sistema de comunicação possui uma fonte de informação,
+um receptor da informação e utiliza um canal ligando a fonte ao
+receptor. A <strong>fonte</strong> deve codificar a mensagem e enviá-la através do
+canal. O  <strong>receptor</strong> deve recebê-la pelo <strong>canal </strong> e ser capaz de decodificá-
+la. Infelizmente, quase sempre a mensagem que chega ao receptor
+não é exatamente igual a que saiu da fonte, devido a ruídos a que
+está sujeito todo canal.
+                      </p>
+                      <div class="card container">
+                        <h5>Tecnologia</h5>
+                        <img src="./imagens/close-up-hands-business-concept.jpg" class="mt-2 img-flaud shadow" alt="">
+                        <figcaption class="ms-2">atualizadao por <strong>Abreus Silvano</strong>/25/ Outubro/2022</figcaption>
+                      </div>
+                      <div class="text-center mt-3">
+                        <p>
+                          Já as tecnologias interativas favorecem a comunicação de um para um
+(1:1), como é o caso do telefone e do correio eletrônico. Podemos ter
+a interação entre duas pessoas ou entre uma pessoa e o computador.
+O computador permite interatividade, e quando se tem um quadronegro ou uma televisão interativa, certamente por trás existe um
+computador. 
+                        </p>
+                        <a href="" class="btn btn-main mt-4" id="btn-main">Saiba mais</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
       </section>
+      <main class="container mt-5"id="Smartphone">
+        <section class="container bg-light mt-5 bg-conver" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-center">
+          <div class="container ">
+            <div class="row">
+              <div class="text-center">
+                <h1 class="text-center mt-5">Novidade sobre os melhores smartphones</h1>
+                <div class="divider divider-centro"></div>
+                <p class="my-4" style="text-align:center ;">
+                  Pequenos o suficiente para serem acomodados em um bolso, os telefones celulares tornaram possível a comunicação em qualquer lugar
+e a qualquer tempo – para o melhor e o pior. Mas eles são mais do
+que meros telefones. Podem ser usados para tirar fotos, gravar filmes, jogar videogames, enviar e receber e-mail e fazer conexão com
+a Internet.
+                   </p> 
+            </div>
+          </div>
+        </main>
       <section class="container">
-        <section id="Smartphone" class="container bg-sention shadow" style="background-image: url(./imagens/tecnosmart.jpg);">
+        <section class="container bg-sention shadow" style="background-image: url(./imagens/tecnosmart.jpg);">
             <div class="overlay"></div>
             <section class="container w-100">
               <div class="row mt-5">

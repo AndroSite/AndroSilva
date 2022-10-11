@@ -76,6 +76,7 @@ height: 94px;
   border-radius: 0px 50% 50% 0px;
 }
 .fundo-lateral h5{
+  font-size: 12px;
   color: #DC3545;
   margin-top: -12px;
 }
@@ -661,9 +662,23 @@ div.entrar{
    font-family: 'Roboto Condensed', sans-serif;
    }
      
-
+   /* botão de login */
+   .logado{
+    background: linear-gradient(to right,#00e0fe, #1107fe);
+     font-size: 12px;
+     color: #072859;
+     margin-top: -30px;
+     width: 150px;
+     border: none;
+     border-radius: 50%;
+   }
+   .fundo-lateral h6{
+    font-size: 12px;
+    color: #DC3545;
+  }
 @media  (max-width:1080px) {
     .carousel-control-prev{
+
       color: #1107fe;
       font-size: 2rem;
       font-weight: 500;
