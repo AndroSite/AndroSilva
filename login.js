@@ -71,5 +71,5 @@ listaUser = JSON.parse(localStorage.getItem('listaUser'))
      function sair(){
          localStorage.removeItem('token')
          localStorage.removeItem('userLogado')
-         window.location.href="https://androsilva.github.io/AndroSilva/"
+         window.location.href="https://androsilva.github.io/AndroSilva/log.html"
      }
