@@ -39,7 +39,7 @@ listaUser = JSON.parse(localStorage.getItem('listaUser'))
     })
  
     if (Usuario.value == userValid.user && Senha.value == userValid.senha) {
-        window.location.href="https://androsilva.github.io/AndroSilva/ferramenta.html"
+        window.location.href="https://androsilva.github.io/AndroSilva/"
         let token = Math.random().toString(16).substr(2) + Math.random().toString(16).substr(2)
         localStorage.setItem('token', token)
         localStorage.setItem('userLogado', JSON.stringify(userValid))
