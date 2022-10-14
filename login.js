@@ -43,6 +43,7 @@ listaUser = JSON.parse(localStorage.getItem('listaUser'))
         let token = Math.random().toString(16).substr(2) + Math.random().toString(16).substr(2)
         localStorage.setItem('token', token)
         localStorage.setItem('userLogado', JSON.stringify(userValid))
+
     } else {
         usuarioLabel.setAttribute('style','color: red')
         Usuario.setAttribute('style',' border-color: red')
@@ -60,8 +61,8 @@ listaUser = JSON.parse(localStorage.getItem('listaUser'))
 
 
      let userLogado = JSON.parse(localStorage.getItem('userLogado'))
-     let logando = document.querySelector('#logado')
-     logando.innerHTML =  `Olá ${userLogado.nome}`
+     let logado = document.querySelector('#logado')
+     logado.innerHTML = 'Olá'+ userLogado.nome
 
      if (localStorage.getItem('token') == null ) {
          alert('Você precisa estar logando para acessar esta página')
@@ -73,3 +74,4 @@ listaUser = JSON.parse(localStorage.getItem('listaUser'))
          localStorage.removeItem('userLogado')
          window.location.href="https://androsilva.github.io/AndroSilva/log.html"
      }
+     

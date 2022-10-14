@@ -672,6 +672,10 @@ div.entrar{
      border: none;
      border-radius: 50%;
    }
+   #logado{
+    font-size: 14px;
+    color: #DC3545;
+   }
    .fundo-lateral h6{
     font-size: 12px;
     color: #DC3545;
