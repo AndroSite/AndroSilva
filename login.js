@@ -61,5 +61,9 @@ listaUser = JSON.parse(localStorage.getItem('listaUser'))
 
      }
 
+     let userLogado = JSON.parse(localStorage.getItem('userLogado'))
+              let logado = document.querySelector('#logado')
+              logado.innerHTML = `Olá ${userLogado.nome}` 
+
      
      

@@ -68,9 +68,6 @@
               <h5 class="ms-2">Androsilva tudo sobre Android</h5>
             <button onclick=" sair()" class="logando ms-1">sair</button>
             <script>
-              let userLogado = JSON.parse(localStorage.getItem('userLogado'))
-              let logado = document.querySelector('#logado')
-              logado.innerHTML = `Olá ${userLogado.nome}` 
                if (localStorage.getItem('token') == null) {
          alert('Você precisa estar logado para acessar essa página')
          window.location.href='https://androsilva.github.io/AndroSilva/log.html'
