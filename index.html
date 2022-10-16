@@ -67,6 +67,17 @@
               <p class="text-white ms-2">Seja bem vindo no site</p>
               <h5 class="ms-2">Androsilva tudo sobre Android</h5>
             <button onclick=" sair()" class="logando ms-1">sair</button>
+            <script>
+               if (localStorage.getItem('token') == null) {
+         alert('Você precisa estar logado para acessar essa página')
+         window.location.href='https://androsilva.github.io/AndroSilva/log.html'
+     } 
+
+     function  saier() {
+         localStorage.removeItem('token')
+         window.location.href='https://androsilva.github.io/AndroSilva/log.html'
+     }
+            </script>
             </div>
           </div>
           <a class="navbar-brand" href="#" style="color:#04357e;"></a>
