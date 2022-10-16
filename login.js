@@ -44,6 +44,7 @@ listaUser = JSON.parse(localStorage.getItem('listaUser'))
         let token = Math.random().toString(16).substring(2) + Math.random().toString(16).substring(2) 
 
         localStorage.setItem('token', token)
+        localStorage.setItem('userLogado', JSON.stringify(userValid))
 
     } else {
         usuarioLabel.setAttribute('style','color: red')

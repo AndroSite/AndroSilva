@@ -63,17 +63,20 @@
         <div class="container-fluid ">
           <div class="fundo-lateral">
             <div class="textos-lateral">
-              <h6 id="logado"></h6>
+              <h6 id='logado'></h6>
               <p class="text-white ms-2">Seja bem vindo no site</p>
               <h5 class="ms-2">Androsilva tudo sobre Android</h5>
             <button onclick=" sair()" class="logando ms-1">sair</button>
             <script>
+              let userLogado = JSON.parse(localStorage.getItem('userLogado'))
+              let logado = document.querySelector('#logado')
+              logado.innerHTML = `Olá ${userLogado.nome}` 
                if (localStorage.getItem('token') == null) {
          alert('Você precisa estar logado para acessar essa página')
          window.location.href='https://androsilva.github.io/AndroSilva/log.html'
      } 
 
-     function  saier() {
+     function  saier(){
          localStorage.removeItem('token')
          window.location.href='https://androsilva.github.io/AndroSilva/log.html'
      }
