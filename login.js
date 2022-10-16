@@ -39,10 +39,11 @@ listaUser = JSON.parse(localStorage.getItem('listaUser'))
     })
  
     if (Usuario.value == userValid.user && Senha.value == userValid.senha) {
-        window.location.href="https://androsilva.github.io/AndroSilva/"
-        let token = Math.random().toString(16).substr(2) + Math.random().toString(16).substr(2)
+       window.location.href='https://androsilva.github.io/AndroSilva/'
+
+        let token = Math.random().toString(16).substring(2) + Math.random().toString(16).substring(2) 
+
         localStorage.setItem('token', token)
-        localStorage.setItem('userLogado', JSON.stringify(userValid))
 
     } else {
         usuarioLabel.setAttribute('style','color: red')
@@ -59,19 +60,13 @@ listaUser = JSON.parse(localStorage.getItem('listaUser'))
 
      }
 
+     if (localStorage.getItem('token') == null) {
+         alert('Você precisa estar logado para acessar essa página')
+         window.location.href='https://androsilva.github.io/AndroSilva/log.html'
+     } 
 
-     let userLogado = JSON.parse(localStorage.getItem('userLogado'))
-     let logado = document.querySelector('#logado')
-     logado.innerHTML = 'Olá'+ userLogado.nome
-
-     if (localStorage.getItem('token') == null ) {
-         alert('Você precisa estar logando para acessar esta página')
-         window.location.href="https://androsilva.github.io/AndroSilva/log.html"
-     }
-
-     function sair(){
+     function  saier() {
          localStorage.removeItem('token')
-         localStorage.removeItem('userLogado')
-         window.location.href="https://androsilva.github.io/AndroSilva/log.html"
+         window.location.href='https://androsilva.github.io/AndroSilva/log.html'
      }
      

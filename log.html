@@ -52,96 +52,148 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
- <header class="cabeçalho-principal">
-   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow  Nav-top">
-     <div class="container">
-       <a class="navbar-brand" href="#">Menu</a>
-       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-       </button>
-       <div class="collapse navbar-collapse" id="navbarNav">
-         <ul class="navbar-nav">
-           <li class="nav-item">
-             <a class="nav-link" href="#SobreNos">Sobre Nos</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="#Atualização">Atualização</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="#produto">Produtos</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="#Sobre-android">Sobre Android</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="#Contactos">Contactos</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="#Serivços">Serviços</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="#Conta-google">Conta-google</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="#favoritos">Categorias</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-           </li>
-         </ul>
-       </div>
-     </div>
-     <div class="button">
-       <button type="button" class="Log log1">
-         <a href="log.html" class="text-white">Entrar</a>
-       </button>
-       <button  type="button" class="Log log2">
-         <a href="Cadastramentos.html">Cadastrar-se</a>
-       </button>
-     </div>
-   </nav>
-   <section id="home" style="background-image: url(./pc_01.jpg);" class="bg-conver hero-senction">
-     <div class="overlay"></div>
-     <div class="container text-white"data-aos="zoom-in-up">
-       <div class="row textos-centro">
-         <div class="col-12 mt-5">
-          <div class="entrar">
-            <div class="continuario">
-              <div class="cardes">
-                <h1>Entrar</h1>
-
-                <div id="msgerror"></div>
-
-                <div class="usuario">
-                  <input type="text" id="Usuario" placeholder="" required>
-                  <label id="userLabel" for="usuario">Usuario</label>
-        
-                </div>
-
-                <div class="usuario">
-                  <input type="password" id="Senha" placeholder="" required>
-                  <label id="senhaLabel" for="usuario">Senha</label>
-                  <i class="fa fa-eye" aria-hidden="true"></i>
-              </div>
-
-            <script src="./javascript/Log.js"></script>
-              <div class="justificar">
-              <button onclick="entrar()">entrar</button>
-              </div>
-              <div class="entrarsite">
-                <p>Não tens conta?
-                  <a href="Cadastramentos.html">Cadastrar-se</a>
-                </p>
-              </div>
-              <script src="./javascript/entrar.js"></script>
-            </div>
-            </div>
-            </div>
+ <header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow  Nav-top position-fixed">
+    <div class="container">
+      <h1 class=" fs-4" style="color:  #1107fe;">Seja bem vindo ao site androsilva, a que a tudo sobre android</h1>
+    </div>
     
-         </div>
-       </div>
-     </div>
-   </section>
+  </nav>
  </header>
+    <section class="bg-conver" style="background-image: url(./pc_01.jpg);">
+      <div class="overlay"></div>
+      <main class="container">
+        <div class="container">
+          <div class="row">
+            <h5 class="fs-2 mt-5">Sobre o site AndroSilva</h5>
+            <div class="col-md-6 text-white">
+              <p class="mt-1">
+                Então, quais são os melhores telefones Tecno que você pode comprar em 2022?<br>
+                  Nossos especialistas levaram tempo para selecionar cuidadosamente os melhores smartphones
+                  que você pode comprar este ano. <br>
+                   <strong>Tecno</strong>, <strong>itel</strong>, <strong>Samsung</strong>, <strong>Wuawei</strong> ,<strong>Nokia</strong>, <strong>Wiko</strong>, <strong>Lenovos</strong> e <strong>Fones</strong>. <br>
+                  Bastas <strong>entrar</strong>ou <strong>Cadastrar-se</strong> no site androsilva, você verá dos seu melhores smartphones  mais caro nem sequer é o melhor. <br>
+    
+              </p>
+              <div class="container">
+              <i class="bi bi-arrow-down text-white mt-3 fs-3"aria-hidden="true">Entrar no site</i>
+              </div>
+
+            </div>
+            <div class="col-md-6">
+              <h5 class="fs-4" style="color: red;">Curiosidade</h5>
+              <div class="card">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="card">
+                      <img src="./imagens/icon png/Sabedoria.jpg" alt="">
+                    </div>
+                    <a href="#" class="text-decoration-none ms-3 mt-2">Veja mais no site</a>
+                  </div>
+                  <div class="col-md-5">
+                    <h5 class="fs-5" style="color: red;">Estudo e a Educação</h5>
+                    <div class="card">
+                      <img src="./imagens/icon png/Investimento.jfif" alt="">
+                    </div>
+                    <a href="#" class="text-decoration-none ms-3 mt-2">Veja mais no site</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <section class="container">
+      <div class="row">
+        <div class="col-md-4 mt-4">
+          <div class="text-center">
+            <div class="cardes">
+              <h1 class="mt-5">Entrar</h1>
+
+              <div id="msgerror"></div>
+
+              <div class="usuario">
+                <input type="text" id="Usuario" placeholder="" required>
+                <label id="userLabel" for="usuario">Usuario</label>
+      
+              </div>
+
+              <div class="usuario">
+                <input type="password" id="Senha" placeholder="" required>
+                <label id="senhaLabel" for="usuario">Senha</label>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+
+          <script src="./javascript/Log.js"></script>
+            <div class="justificar">
+            <button onclick="entrar()">entrar</button>
+            </div>
+            <div class="entrarsite mt-4">
+              <p>Não tens conta?
+                <a href="Cadastramentos.html">Cadastrar-se</a>
+              </p>
+            </div>
+            <script src="./javascript/entrar.js"></script>
+          </div>
+          </div>
+          </div>
+          <div class="col-md-4">
+            <h1 class="fs-5">Categorias de escrição da página</h1>
+            <div class="container">
+              <div class="position-relative m-4">
+                <div class="progress" style="height: 1px;">
+                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" ariavaluemin="0" aria-valuemax="100"></div>
+                </div>
+                <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btnprimary rounded-pill" style="width: 2rem; height:2rem;">1</button>
+                <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btnprimary rounded-pill" style="width: 2rem; height:2rem;">2</button>
+                <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btnsecondary rounded-pill" style="width: 2rem; height:2rem;">3</button>
+                </div>
+                <div class="list-text">
+                  <h5 class="mt-2">Sobre android</h5>
+                  <ul class="list-group list-group-flush mt-2">
+                    <li class="list-group-item">Atualização de firmware pela site</li>
+                    <li class="list-group-item">Atualização de firmware pela PC</li>
+                    <li class="list-group-item">Instalação de firmware</li>
+                    <li class="list-group-item">Instalação USB Drive</li>
+                    <li class="list-group-item">Instalação USB drive para PC</li>
+                    </ul>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">desbloqueio de Conta-google</li>
+                      <li class="list-group-item">Adicionar Conta-google pelo android</li>
+                      <li class="list-group-item">Remoção padrão /PN /ID</li>
+                      <li class="list-group-item">flasher o seu android</li>
+                      <li class="list-group-item">flasher pelo cartão CD o seu android</li>
+
+                      </ul>
+                      
+                </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-5">
+            <div class="position-relative m-4">
+              <div class="progress" style="height: 1px;">
+              <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" ariavaluemin="0" aria-valuemax="100"></div>
+              </div>
+              <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btnprimary rounded-pill" style="width: 2rem; height:2rem;">4</button>
+              <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btnprimary rounded-pill" style="width: 2rem; height:2rem;">5</button>
+              <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btnsecondary rounded-pill" style="width: 2rem; height:2rem;">6</button>
+              </div>
+              <div class="list-text mt-5">
+                <h5 class="mt-2">Sobre Computadores no site</h5>
+                <ul class="list-group list-group-flush mt-2">
+                  <li class="list-group-item">Atualização Drive </li>
+                  <li class="list-group-item">Atualização do sistema operacional pelo site</li>
+                  <li class="list-group-item">Instalação do Windows 7/ Windows 8/ Windows 10</li>
+                  <li class="list-group-item">Instalação do Windows 11 </li>
+                  <li class="list-group-item">Instalação USB drive para PC</li>
+                  </ul>
+              </div>
+          </div>
+          
+          </div>
+          </div>
+      </section>
+    </section>
+    
 </body>
 </html>
