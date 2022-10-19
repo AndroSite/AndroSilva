@@ -52,18 +52,110 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
- <header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow  Nav-top position-fixed">
-    <div class="container">
-      <h1 class=" fs-4" style="color:  #1107fe;">Seja bem vindo ao site androsilva, a que a tudo sobre android</h1>
+ <header class=" ">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light modal-header">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color:#ffffff ;"><i class="bi bi-android">Site AndroSilva</i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="color: #ffffff;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" style="color:#ffffff ;">Página Androsilva</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-telephone" style="color: #ffffff;"> Fale connosco</i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success botton-login" type="submit">buscar</button>
+        </form>
+      </div>
+      <button type="button" class="btn btn-danger botton-login bg-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Entrar
+       </button>
+         </div>
+       <div class="modal fade ms-auto" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+           <div class="modal-content">
+             <div class="modal-header">
+               <div class="container">
+                 <div class="row">
+                   <div class="col-md-5">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                   </div>
+                   <div class="col-md-6">
+                    <div class="container">
+                      <i class="bi bi-arrow-down text-white mt-3"aria-hidden="true">Entrar no site</i>
+                      </div>
+                   </div>
+                 </div>
+               </div>
+                
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="container modal-body bg-conver" style="background-image: url(./pc_01.jpg);">
+              <div class="overlay"></div>
+               <div class="card-cente">
+              <div class="cardes">
+                <h1 class="mt-5">Entrar</h1>
+      
+                <div id="msgerror"></div>
+      
+                <div class="usuario">
+                  <input type="text" id="Usuario" placeholder="" required>
+                  <label id="userLabel" for="usuario">Usuario</label>
+        
+                </div>
+      
+                <div class="usuario">
+                  <input type="password" id="Senha" placeholder="" required>
+                  <label id="senhaLabel" for="usuario">Senha</label>
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+              </div>
+      
+            <script src="./javascript/Log.js"></script>
+              <div class="justificar">
+              <button onclick="entrar()">entrar</button>
+              </div>
+              <div class="entrarsite mt-4">
+                <p>Não tens conta?
+                  <a href="Cadastramentos.html">Cadastrar-se</a>
+                </p>
+              </div>
+              <script src="./javascript/entrar.js"></script>
+            </div>
+             </div>
+             <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+             </div>
+           </div>
+         </div>
+       </div>
+      
     </div>
-    
   </nav>
- </header>
+  </header>
+   </div>
+ </div>
     <section class="bg-conver" style="background-image: url(./pc_01.jpg);">
       <div class="overlay"></div>
       <main class="container">
-        <div class="container">
+         <div class="container">
           <div class="row">
             <h5 class="fs-2 mt-5">Sobre o site AndroSilva</h5>
             <div class="col-md-6 text-white" data-aos="fade-right">
@@ -75,13 +167,9 @@
                   Bastas <strong>entrar</strong>ou <strong>Cadastrar-se</strong> no site androsilva, você verá dos seu melhores smartphones  mais caro nem sequer é o melhor. <br>
     
               </p>
-              <div class="container">
-              <i class="bi bi-arrow-down text-white mt-3 fs-3"aria-hidden="true">Entrar no site</i>
-              </div>
-
             </div>
             <div class="col-md-6" data-aos="fade-left">
-              <h5 class="fs-4" style="color: red;">Curiosidade</h5>
+               <h5 class="fs-4" style="color: red;">Curiosidade</h5>
               <div class="card">
                 <div class="row">
                   <div class="col-md-5">
@@ -102,42 +190,12 @@
             </div>
           </div>
         </div>
+        <!-- Scrollable modal -->
+        
       </main>
       <section class="container">
       <div class="row">
-        <div class="col-md-4 mt-4">
-          <div class="text-center"  data-aos="fade-up">
-            <div class="cardes">
-              <h1 class="mt-5">Entrar</h1>
-
-              <div id="msgerror"></div>
-
-              <div class="usuario">
-                <input type="text" id="Usuario" placeholder="" required>
-                <label id="userLabel" for="usuario">Usuario</label>
-      
-              </div>
-
-              <div class="usuario">
-                <input type="password" id="Senha" placeholder="" required>
-                <label id="senhaLabel" for="usuario">Senha</label>
-                <i class="fa fa-eye" aria-hidden="true"></i>
-            </div>
-
-          <script src="./javascript/Log.js"></script>
-            <div class="justificar">
-            <button onclick="entrar()">entrar</button>
-            </div>
-            <div class="entrarsite mt-4">
-              <p>Não tens conta?
-                <a href="Cadastramentos.html">Cadastrar-se</a>
-              </p>
-            </div>
-            <script src="./javascript/entrar.js"></script>
-          </div>
-          </div>
-          </div>
-          <div class="col-md-4"  data-aos="fade-up">
+          <div class="col-md-3"  data-aos="fade-up">
             <h1 class="fs-5">Categorias de escrição da página</h1>
             <div class="container">
               <div class="position-relative m-4">
@@ -169,7 +227,7 @@
                 </div>
             </div>
           </div>
-          <div class="col-md-4 mt-5"  data-aos="fade-up">
+          <div class="col-md-3 mt-3"  data-aos="fade-up">
             <div class="position-relative m-4">
               <div class="progress" style="height: 1px;">
               <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" ariavaluemin="0" aria-valuemax="100"></div>
@@ -189,11 +247,75 @@
                   </ul>
               </div>
           </div>
-          
+          <div class="col-md-6">
+            <div class="card">
+              <h1>Os melhores smartphone do ano 2022</h1>
+              <div class="img">
+                <img src="./imagens/capa-melhores-celulares.webp" class="img-fluid shadow" alt="">
+                <figcaption class="ms-5 mt-2" ><i class="bi bi-whatsapp ms-2 icones"></i> <i class="bi bi-facebook ms-2 icones "></i> <i class="bi bi-twitter ms-2 icones"></i>  Publicado 27/12/2021 e atualizado 09/09/2022</figcaption>
+              </div>
+              <div class="body mt-2">
+                <div class="container">
+                <p>
+                  Quais são os melhores celulares 2022? Com tantos modelos e marcas disponíveis, 
+                  sabemos que nem sempre é fácil escolher um celular bom! A propósito, nem sempre o que é melhor para um usuário é o melhor para você.
+
+                </p>
+                </div>
+              </div>
+              <div class="container">
+              <div class="row">
+                <div class="col-md-5 mt-2">
+                  <div class="card bg-warning">
+                    <div class="modal-heade">
+
+                    </div>
+                    <p class="card-paraf">
+                      Em primeiro lugar, é necessário estabelecer alguns parâmetros. E o orçamento, 
+                      ou seja, o quanto você está disposto a gastar em um smartphone é, certamente, um aspecto muito importante.
+                       Mas o melhor celular não é necessariamente o mais caro, e sim o que está mais de acordo com suas necessidades.
+
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6 mt-2">
+                  <div class="card bg-success">
+                  <div class="modal-heade">
+                    <h5>Já fizeste a sua escolha?</h5>
+                  </div>
+                  <p class="card-paraf">
+                    Então, para te ajudar nessa missão, a nossa equipe editorial especializada no segmento montou uma seleção dos melhores celulares 2022.
+                     Se você se pergunta qual o melhor celular, precisa ter algumas coisas em mente.
+
+                  </p>
+                </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
           </div>
           </div>
       </section>
     </section>
-    
+    <div class="footer shadow bg-dark"> 
+       <h2>Logo</h2>
+      <div class="sociais">
+        <div class="socia">
+          <a href="https://free.facebook.com/"><i class="bi bi-instagram"></i></a>
+        </div>
+        <div class="socia">
+          <a href="https://www.instagram.com/"><i class="bi bi-facebook"></i></a>
+        </div>
+        <div class="socia">
+          <a href="https://www.whatsapp.facebook.com/"><i class="bi bi-whatsapp"></i></a>
+        </div>
+        <div class="socia">
+          <a href="https://www.twitter.com/"><i class="bi bi-twitter"></i></a>
+        </div>
+        <p class="desevolve">Desevolvido por Abreus Silvano</p>
+      </div>
+    </div>
+    </div>
 </body>
 </html>
