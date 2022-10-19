@@ -3,10 +3,27 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
  
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200;400&family=Ubuntu&display=swap');
 
 body{
   background-color: #FFFFFF ;
   line-height: 1.8;
+}
+body p{
+  font-family: 'Ubuntu', sans-serif;
+}
+body h2{
+  font-family: 'Bebas Neue', cursive;
+}
+body h3{
+  font-family: 'Bebas Neue', cursive;
+}
+body h4{
+  font-family: 'Bebas Neue', cursive;
+}
+body h5{
+  font-family: 'Bebas Neue', cursive;
 }
 section.cabeçalho-top{
   margin-top: 70px;
