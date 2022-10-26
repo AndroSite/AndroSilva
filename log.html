@@ -10,9 +10,11 @@
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
  <link rel="stylesheet" href="css/AndroStyle.css">
+ <link rel="stylesheet" href="css/botãoScroll.css">
  <link rel="shortcut icon" href="favi.png" type="image/x-icon">
  <script src="./animação.js" defer></script>
  <script src="./login.js" defer></script>
+ <script src="./botãoScroll.js" defer></script>
  <script src="./textoanimado.js" defer></script>
  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,7 +63,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
- <header class=" ">
+ <header class="" id="topo">
   <nav class="navbar navbar-expand-lg navbar-light bg-light modal-header">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html" style="color:#ffffff ;"><i class="bi bi-android">Site AndroSilva</i></a>
@@ -74,11 +76,14 @@
             <a class="nav-link active" aria-current="page" href="#" style="color: #ffffff;">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html" style="color:#ffffff ;">Página Androsilva</a>
+            <a class="nav-link active" aria-current="page" href="#Contactos" style="color: #ffffff;">fale connosco</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ferramenta.html" style="color:#ffffff ;">Sobre android</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="bi bi-telephone" style="color: #ffffff;"> Fale connosco</i>
+              <i class="bi bi-telephone" style="color: #ffffff;">Contactos</i>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Action</a></li>
@@ -89,9 +94,9 @@
           </li>
           
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success botton-login" type="submit">buscar</button>
+        <form class="d-flex"method="get" action="https://www.google.com.br/search?q=" target="_blank">
+          <input class="form-control control  me-2" type="search" placeholder="Procurar por" aria-label="Search"><i class="bi bi-search pesquisar"></i>
+          <button class="btn btn-outline-success botton-login" type="submit">Pesquisar </button>
         </form>
       </div>
       <button type="button" class="btn btn-danger botton-login bg-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -117,7 +122,7 @@
                 
                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
              </div>
-             <div class="container modal-body bg-conver" style="background-image: url(./pc_01.jpg);">
+             <div class="container modal-body bg-conver cabeçalho" style="background-image: url(./pc_01.jpg);">
               <div class="overlay"></div>
                <div class="card-cente">
               <div class="cardes">
@@ -166,9 +171,9 @@
       <main class="container">
          <div class="container">
           <div class="row">
-            <h5 class="fs-2 mt-5">Sobre o site AndroSilva</h5>
-            <div class="col-md-6 text-white" data-aos="fade-right">
-              <p class="mt-1">
+            <h1 class="fs-2 mt-5">As melhores tecnologias dos Smartphone</h1>
+            <div class="col-md-5 text-white" >
+              <p class="mt-5">
                 Então, quais são os melhores telefones Tecno que você pode comprar em 2022?<br>
                   Nossos especialistas levaram tempo para selecionar cuidadosamente os melhores smartphones
                   que você pode comprar este ano. <br>
@@ -177,7 +182,7 @@
     
               </p>
             </div>
-            <div class="col-md-6" data-aos="fade-left">
+            <div class="col-md-6 ms-2 mt-3" >
                <h5 class="fs-4" style="color: red;">Curiosidade</h5>
               <div class="card">
                 <div class="row">
@@ -196,6 +201,7 @@
                   </div>
                 </div>
               </div>
+               
             </div>
           </div>
         </div>
@@ -204,8 +210,9 @@
       </main>
     </section>
       <section class="container">
+        <main>
       <div class="row">
-          <div class="col-md-3"  data-aos="fade-up">
+          <div class="col-md-3" data-aos="fade-up">
             <h1 class="fs-5">Categorias de escrição da página</h1>
             <div class="container">
               <div class="position-relative m-4">
@@ -258,7 +265,7 @@
               </div>
           </div>
           <div class="col-md-6">
-            <div class="card">
+            <div class="card"data-aos="fade-up">
               <h1>Os melhores smartphone do ano 2022</h1>
               <div class="img">
                 <img src="./imagens/capa-melhores-celulares.webp" class="img-fluid shadow" alt="">
@@ -303,26 +310,272 @@
               </div>
               </div>
             </div>
+            <div class="container" style="background-image: url(./pc_01.jpg);">
+
+            </div>
           </div>
           </div>
           </div>
-          <main class="container shadow mt-5">
+        </main>
+          <main class="container  mt-5">
             <div class="container">
-              <h1 class="mt-3">Samsung Galax</h1>
-              <p>
-                A propósito, é preciso ressaltar que aqui não estão modelos necessariamente de 2022. 
-                Em nossa seleção, estão os melhores celulares 2021 e até alguns dos melhores celulares 2020 que continuam sendo ótima alternativa para o ano que se inicia.
-                 Mas, é claro, há muitos produtos recém-lançados também!
-              </p>
-              <p>
-                A Samsung se apresenta como uma das principais referências quando o assunto é smartphones. São várias as opções encontradas no mercado, o que a faz competir com outras fabricantes, como Apple e Xiaomi.
+             <div class="row">
+               <div class="col-md-8">
+                <h1 class="mt-3">Samsung Galax</h1>
+                <p>
+                  A propósito, é preciso ressaltar que aqui não estão modelos necessariamente de 2022. 
+                  Em nossa seleção, estão os melhores celulares 2021 e até alguns dos melhores celulares 2020 que continuam sendo ótima alternativa para o ano que se inicia.
+                   Mas, é claro, há muitos produtos recém-lançados também!
+                </p>
+                <p>
+                  A Samsung se apresenta como uma das principais referências quando o assunto é smartphones. São várias as opções encontradas no mercado, o que a faz competir com outras fabricantes, como Apple e Xiaomi.
+  
+                  Desta maneira, se você está em dúvida se vale a pena ou não comprar um celular Samsung, a resposta é sim. No entanto, é muito importante avaliar quais são as suas necessidades.
+  
+                   A boa notícia é que é possível encontrar smartphones de diferentes marcas e preços. Ou seja, você poderá ter um celular bom em mãos, sem precisar investir muito.
+                </p>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <a href="#" class="text-decoration-none"><h3 class="mt-4" style="color: #1107fe;">Feramenta desbloqueio de android</h3></a>
+                      <div class="card bg-light shadow">
+                        <div class="modal-heade">
+                          <h5 class="ms-2">OALE </h5>
+                          <img src="./imagens/google/porta2.jpg" class="card-img-top img-fluid medição" alt="">
+                        </div>
+                        <p class="card-paraf container ">
+                          Então, para te ajudar nessa missão, a nossa equipe editorial especializada no segmento montou uma seleção dos melhores celulares 2022.
+                           Se você se pergunta qual o melhor celular, precisa ter algumas coisas em mente.
+                           Para desbloquear veja link abaixo .
+                        </p>
+                        <i class="bi bi-arrow-down" style="color: #1107fe; text-align: center;"></i>
+                        <p class="card-paraf container fs-5" style="text-align: center;">
+                          para remover <a href="index.html">Conta-google </a> de esse android, tutoriai
+                         <a href="#"><i class="bi bi-youtube" style="color: #fe0707; text-align: center;"></i></a>
+                        </p>
+                      </div>
+                      <div class="card bg-light shadow">
+                        <div class="modal-heade">
+                          <h5 class="ms-2">ITEL</h5>
+                          <img src="./imagens/google/porta9.jpg" class="card-img-top img-fluid medição"  alt="">
+                        </div>
+                        <p class="card-paraf  container">
+                          Então, para te ajudar nessa missão, a nossa equipe editorial especializada no segmento montou uma seleção dos melhores celulares 2022.
+                           Se você se pergunta qual o melhor celular, precisa ter algumas coisas em mente.
+      
+                        </p>
+                        <i class="bi bi-arrow-down" style="color: #1107fe; text-align: center;"></i>
+                        <p class="card-paraf fs-5 container" style="text-align: center;">
+                          para remover <a href="index.html">Conta-google </a> de esse android, tutoriai
+                         <a href="#"><i class="bi bi-youtube" style="color: #fe0707; text-align: center;"></i></a>
+                        </p>
+                      </div>
+                      <div class="card bg-light shadow">
+                        <div class="modal-heade">
+                          <h5 class="ms-2">BLING</h5>
+                          <img src="./imagens/google/temos9.jpg" class="card-img-top img-fluid medição" alt="">
+                        </div>
+                        <p class="card-paraf container">
+                          Então, para te ajudar nessa missão, a nossa equipe editorial especializada no segmento montou uma seleção dos melhores celulares 2022.
+                           Se você se pergunta qual o melhor celular, precisa ter algumas coisas em mente.
+      
+                        </p>
+                        <i class="bi bi-arrow-down" style="color: #1107fe; text-align: center;"></i>
+                        <p class="card-paraf fs-5 container" style="text-align: center;">
+                          para remover <a href="index.html">Conta-google </a> de esse android, tutoriai
+                         <a href="#"><i class="bi bi-youtube" style="color: #fe0707; text-align: center;"></i></a>
+                        </p>
+                      </div>
+                      <div class="card bg-light shadow">
+                        <div class="modal-heade">
+                          <h5 class="ms-2">Samsung Galax</h5>
+                          <img src="./imagens/google/temos10.jpg" class="card-img-top img-fluid medição" alt="">
+                        </div>
+                        <p class="card-paraf container">
+                          Então, para te ajudar nessa missão, a nossa equipe editorial especializada no segmento montou uma seleção dos melhores celulares 2022.
+                           Se você se pergunta qual o melhor celular, precisa ter algumas coisas em mente.
+      
+                        </p>
+                        <i class="bi bi-arrow-down" style="color: #1107fe; text-align: center;"></i>
+                        <p class="card-paraf fs-5 container" style="text-align: center;">
+                          para remover <a href="index.html">Conta-google </a> de esse android, tutoriai
+                         <a href="#"><i class="bi bi-youtube" style="color: #fe0707; text-align: center;"></i></a>
+                        </p>
+                      </div>
+                      <div class="card bg-light shadow">
+                        <div class="modal-heade">
+                          <h5 class="ms-2">TECNO CAMON</h5>
+                          <img src="./imagens/google/temos11.jpg" class="card-img-top img-fluid medição" alt="">
+                        </div>
+                        <p class="card-paraf container">
+                          Então, para te ajudar nessa missão, a nossa equipe editorial especializada no segmento montou uma seleção dos melhores celulares 2022.
+                           Se você se pergunta qual o melhor celular, precisa ter algumas coisas em mente.
+      
+                        </p>
+                        <i class="bi bi-arrow-down" style="color: #1107fe; text-align: center;"></i>
+                        <p class="card-paraf fs-5 container" style="text-align: center;">
+                          para remover <a href="index.html">Conta-google </a> de esse android, tutoriai
+                         <a href="#"><i class="bi bi-youtube" style="color: #fe0707; text-align: center;"></i></a>
+                        </p>
+                      </div>
+                      <div class="card bg-light shadow">
+                        <div class="modal-heade">
+                          <h5 class="ms-2">Wiko</h5>
+                          <img src="./imagens/google/temos14.jpg" class="card-img-top img-fluid medição" alt="">
+                        </div>
+                        <p class="card-paraf container">
+                          Então, para te ajudar nessa missão, a nossa equipe editorial especializada no segmento montou uma seleção dos melhores celulares 2022.
+                           Se você se pergunta qual o melhor celular, precisa ter algumas coisas em mente.
+      
+                        </p>
+                        <i class="bi bi-arrow-down" style="color: #1107fe; text-align: center;"></i>
+                        <p class="card-paraf fs-5 container" style="text-align: center;">
+                          para remover <a href="index.html">Conta-google </a> de esse android, tutoriai
+                         <a href="#"><i class="bi bi-youtube" style="color: #fe0707; text-align: center;"></i></a>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+                    <a href="#" class="text-decoration-none"><h3 class="mt-4" style="color: #1107fe;">desbloqueio Samsung FRP</h3></a>
+                    <div class="card bg-light shadow">
+                      <div class="modal-heade">
+                        <h5 class="ms-2">Já fizeste a sua escolha?</h5>
+                        <img src="" class="card-img-top img-fluid medição" alt="">
+                      </div>
+                      <p class="card-paraf container">
+                        Então, para te ajudar nessa missão, a nossa equipe editorial especializada no segmento montou uma seleção dos melhores celulares 2022.
+                         Se você se pergunta qual o melhor celular, precisa ter algumas coisas em mente.
+    
+                      </p>
+                      <i class="bi bi-arrow-down" style="color: #1107fe; text-align: center;"></i>
+                      <p class="card-paraf fs-5 container" style="text-align: center;">
+                        para remover <a href="index.html">Conta-google </a> de esse android, tutoriai
+                       <a href="#"><i class="bi bi-youtube" style="color: #fe0707; text-align: center;"></i></a>
+                      </p>
+                    </div>
+                    <div class="card bg-light shadow">
+                      <div class="modal-heade">
+                        <h5 class="ms-2">Já fizeste a sua escolha?</h5>
+                        <img src="" class="card-img-top img-fluid medição" alt="">
+                      </div>
+                      <p class="card-paraf container">
+                        Então, para te ajudar nessa missão, a nossa equipe editorial especializada no segmento montou uma seleção dos melhores celulares 2022.
+                         Se você se pergunta qual o melhor celular, precisa ter algumas coisas em mente.
+    
+                      </p>
+                      <i class="bi bi-arrow-down" style="color: #1107fe; text-align: center;"></i>
+                      <p class="card-paraf fs-5 container" style="text-align: center;">
+                        para remover <a href="index.html">Conta-google </a> de esse android, tutoriai
+                       <a href="#"><i class="bi bi-youtube" style="color: #fe0707; text-align: center;"></i></a>
+                      </p>
+                    </div>
+                    <div class="card bg-light shadow">
+                      <div class="modal-heade">
+                        <h5 class="ms-2">Já fizeste a sua escolha?</h5>
+                        <img src="" class="card-img-top img-fluid medição" alt="">
+                      </div>
+                      <p class="card-paraf container">
+                        Então, para te ajudar nessa missão, a nossa equipe editorial especializada no segmento montou uma seleção dos melhores celulares 2022.
+                         Se você se pergunta qual o melhor celular, precisa ter algumas coisas em mente.
+    
+                      </p>
+                      <i class="bi bi-arrow-down" style="color: #1107fe; text-align: center;"></i>
+                      <p class="card-paraf fs-5 container" style="text-align: center;">
+                        para remover <a href="index.html">Conta-google </a> de esse android, tutoriai
+                       <a href="#"><i class="bi bi-youtube" style="color: #fe0707; text-align: center;"></i></a>
+                      </p>
+                    </div>
+                    <div class="card bg-light shadow">
+                      <div class="modal-heade">
+                        <h5 class="ms-2">Já fizeste a sua escolha?</h5>
+                        <img src="" class="card-img-top img-fluid medição" alt="">
+                      </div>
+                      <p class="card-paraf container">
+                        Então, para te ajudar nessa missão, a nossa equipe editorial especializada no segmento montou uma seleção dos melhores celulares 2022.
+                         Se você se pergunta qual o melhor celular, precisa ter algumas coisas em mente.
+    
+                      </p>
+                      <i class="bi bi-arrow-down" style="color: #1107fe; text-align: center;"></i>
+                      <p class="card-paraf fs-5 container" style="text-align: center;">
+                        para remover <a href="index.html">Conta-google </a> de esse android, tutoriai
+                       <a href="#"><i class="bi bi-youtube" style="color: #fe0707; text-align: center;"></i></a>
+                      </p>
+                    </div>
+                    <div class="card bg-light shadow">
+                      <div class="modal-heade">
+                        <h5 class="ms-2">Já fizeste a sua escolha?</h5>
+                        <img src="" class="card-img-top img-fluid medição" alt="">
+                      </div>
+                      <p class="card-paraf container">
+                        Então, para te ajudar nessa missão, a nossa equipe editorial especializada no segmento montou uma seleção dos melhores celulares 2022.
+                         Se você se pergunta qual o melhor celular, precisa ter algumas coisas em mente.
+    
+                      </p>
+                      <i class="bi bi-arrow-down" style="color: #1107fe; text-align: center;"></i>
+                      <p class="card-paraf fs-5 container" style="text-align: center;">
+                        para remover <a href="index.html">Conta-google </a> de esse android, tutoriai
+                       <a href="#"><i class="bi bi-youtube" style="color: #fe0707; text-align: center;"></i></a>
+                      </p>
+                    </div>
+                    <div class="card bg-light shadow">
+                      <div class="modal-heade">
+                        <h5 class="ms-2">Já fizeste a sua escolha?</h5>
+                        <img src="" class="card-img-top img-fluid medição" alt="">
+                      </div>
+                      <p class="card-paraf container">
+                        Então, para te ajudar nessa missão, a nossa equipe editorial especializada no segmento montou uma seleção dos melhores celulares 2022.
+                         Se você se pergunta qual o melhor celular, precisa ter algumas coisas em mente.
+                      </p>
+                      <i class="bi bi-arrow-down" style="color: #1107fe; text-align: center;"></i>
+                      <p class="card-paraf fs-5 container" style="text-align: center;">
+                        para remover <a href="index.html">Conta-google </a> de esse android, tutoriai
+                       <a href="#"><i class="bi bi-youtube" style="color: #fe0707; text-align: center;"></i></a>
+                      </p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+               </div>
+               <div class="col-md-4">
+                 <div class="img">
+                   <h2>As melhores novidade de Tecno</h2>
+                   <a href="#Spark">
+                   <img src="./imagens/smartphone_12.png" class="img-fluid shadow mt-4" alt="">
+                   </a>
+                   <figcaption class="ms-5 mt-2" ><i class="bi bi-whatsapp ms-2 icones"></i> <i class="bi bi-facebook ms-2 icones "></i> <i class="bi bi-twitter ms-2 icones"></i>  Publicado 27/12/2021 e atualizado 09/09/2022</figcaption>
+                 </div>
+                 <a href="#" class="text-decoration-none">
+                   <div class="card bg-primary container mt-3 text-decoration-none shadow">
+                     <p class="text-white mt-4">
+                      Techni, RedMi, Samsung, Itel, Huawei, Oppo, Nokia e muitos outros são ótimos dispositivos. Enquanto isso,
+                      nossa concentração seria em um dos maiores mercados da Nigéria Itel.
+                      Estaríamos olhando para as diferentes grandes variedades de itens.
+                      
+                     </p>
+                   </div>
+                 </a>
+                 <div class="img">
+                  <a href="#Spark">
+                  <img src="./imagens/icon png/Tecno_Spark_Go_2022_big.jpg" class="img-fluid shadow mt-4" alt="">
+                  </a>
+                  <figcaption class="ms-5 mt-2" ><i class="bi bi-whatsapp ms-2 icones"></i> <i class="bi bi-facebook ms-2 icones "></i> <i class="bi bi-twitter ms-2 icones"></i>  Publicado 27/12/2021 e atualizado 09/09/2022</figcaption>
+                </div>
+                <a href="#" class="text-decoration-none">
+                  <div class="card bg-primary container mt-3 text-decoration-none shadow">
+                    <p class="text-white mt-4">
+                     Techni, RedMi, Samsung, Itel, Huawei, Oppo, Nokia e muitos outros são ótimos dispositivos. Enquanto isso,
+                     nossa concentração seria em um dos maiores mercados da Nigéria Itel.
+                     Estaríamos olhando para as diferentes grandes variedades de itens.
+                    </p>
+                  </div>
+                </a>
+                <div class="container">
 
-Desta maneira, se você está em dúvida se vale a pena ou não comprar um celular Samsung, a resposta é sim. No entanto, é muito importante avaliar quais são as suas necessidades.
-
-A boa notícia é que é possível encontrar smartphones de diferentes marcas e preços. Ou seja, você poderá ter um celular bom em mãos, sem precisar investir muito.
-              </p>
+                </div>
+               </div>
+             </div>
               <div class="container">
-                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Ver mais</button>
+                <button class="btn btn-primary mt-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Ver mais</button>
    
   <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
     <div class="offcanvas-header">
@@ -678,7 +931,7 @@ O seu sistema com quatro câmeras traseiras pode lhe proporcionar registros impe
                   </div>
                 </div>
               </div>
-              <div class="col">
+              <div class="col" id="Spark">
                 <div class="card h-100">
                   <h2 class="card-title">Tecno Camon 19 Neo</h2>
                   <img src="./imagens/icon png/Tecno_Canom _big.jpg" class="card-img-top img-fluid" alt="...">
@@ -1017,24 +1270,121 @@ Tem uma enorme tela Touchscreen de 6.5 polegadas com uma resolução de 1600x720
           </section>
       </section>
     </section>
-    <div class="footer shadow bg-dark"> 
-       <h2>Logo</h2>
-      <div class="sociais">
-        <div class="socia">
-          <a href="https://free.facebook.com/"><i class="bi bi-instagram"></i></a>
-        </div>
-        <div class="socia">
-          <a href="https://www.instagram.com/"><i class="bi bi-facebook"></i></a>
-        </div>
-        <div class="socia">
-          <a href="https://www.whatsapp.facebook.com/"><i class="bi bi-whatsapp"></i></a>
-        </div>
-        <div class="socia">
-          <a href="https://www.twitter.com/"><i class="bi bi-twitter"></i></a>
-        </div>
-        <p class="desevolve">Desevolvido por Abreus Silvano</p>
+    <section id="Contactos" class="container bg-conver mt-5" style="background-image: url(./imagens/uteis3.jpg) ;"data-aos="fade-up">
+      <div class="overlay"></div>
+              <div class="contaner-titulo text-white">
+                <div class="row">
+                  <div class="col-12 Cevicos-serviço"data-aos="fade-up">
+                    <h1 style="text-align:center ;" class="Projetos-titulo text-white" style="color:  #000000;" >Contactos</h1>
+                      <div class="divider divider-centro"></div>
+                      <p class="my-4" style="text-align:center ;" style="color:  #000000;">
+                        Então, quais são os melhores telefones Tecno que você pode comprar em 2022?<br>
+                         Nossos especialistas levaram tempo para selecionar cuidadosamente os melhores smartphones <br> da Tecno que você pode comprar este ano.
+                         Surpreendentemente, o telefone Tecno mais caro nem sequer é o melhor.
+                         </p>
+                  </div>
+                </div>
+                 <div class="row">
+                     <div class="col-md-8 mx-auto">
+                         <form action="#" class="row g-4">
+                             <div class="form-group col-md-6">
+                              <input type="text" class="form-control" placeholder="Nome">
+                             </div>
+                             <div class="form-group col-md-6">
+                              <input type="email" class="form-control" placeholder="Email">
+                             </div>
+                             <div class="form-group col-md-12">
+                              <input type="text" class="form-control" placeholder="Objectivos">
+                             </div>
+                             <div class="form-group col-md-12">
+                              <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Deixe a sua menssagem"></textarea>
+                             </div>
+                             <div class="text-center" style="text-align: center;">
+                              <button class="btn btn-main text-center" type="submit">Enviar</button>
+                             </div>
+                             
+                         </form>
+                     </div>
+                 </div>
+              </div>
+  
+   </section>
+    <footer>
+      <div class="boxs"data-aos="fade-up"
+      data-aos-anchor-placement="bottom-bottom">
+        <h2>Início</h2>
+        <ul>
+          <li><a href="index.html"><i class="bi bi-house"></i>home</a></li>
+          <li><a href="#SobreNos"><i class="bi bi-cast"></i>Sobre</a></li>
+          <li><a href="#Atualização"><i class="bi bi-cast"></i>Atualização</a></li>
+          <li><a href="#Produtos"><i class="bi bi-cast"></i>Produtos</a></li>
+          <li><a href="#Sobre-android"><i class="bi bi-cast"></i>Sobre-android</a></li>
+        </ul>
+        <h2>Conta-google</h2>
+         <ul>
+          <li><a href="#">Adicionar Conta-google</a></li>
+           <li><a href="#">Removendo Conta-google</a></li>
+           <li><a href="#">Adiciondo conta-pessoal</a></li>
+           <li><a href="#">Hart Reset</a></li>
+         </ul>
       </div>
-    </div>
-    </div>
+      <div class="boxs"data-aos="fade-up"
+      data-aos-anchor-placement="bottom-bottom">
+        <h2>Informações</h2>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="redes.html"><i class="bi bi-person-lines-fill"></i>contatos</a></li>
+          <li><a href="redes.html"><i class="bi bi-envelope-open"></i>Email</a></li>
+        </ul>
+        <h2>Aplicações</h2>
+        <ul>
+          <li><a href="#">PlayStor</a></li>
+          <li><a href="#">App Store</a></li>
+          <li><a href="#">APKPure</a></li>
+        </ul>
+      </div>
+      <div class="boxs"data-aos="fade-up"
+      data-aos-anchor-placement="bottom-bottom">
+        <h2>Suportes</h2>
+        <ul>
+          <li><a href="redes.html"><i class="bi bi-telephone"></i>Telefone</a></li>
+          <li><a href="redes.html"><i class="bi bi-whatsapp"></i>whatsapp</a></li>
+          <li><a href="#"><i class="bi bi-android"></i>AndroSilva</a></li>
+        </ul>
+        <h2>Games</h2>
+        <ul>
+          <li><a href="#">PlayStor</a></li>
+          <li><a href="#">App Store</a></li>
+          <li><a href="#">APKPure</a></li>
+        </ul>
+      </div>
+      <div data-scroll="suave" data-anima="scroll">
+        <a href="#topo">
+          <div class="topo">
+            <img src="./seta-para-acima (1).png" class="ceta-acima" alt="voltar para topo">
+          </div>
+        </a>
+
+      </div>
+    </footer>
+    <div class="footer shadow bg-dark"> 
+      <h2>Logo</h2>
+     <div class="sociais">
+       <div class="socia">
+         <a href="https://free.facebook.com/"><i class="bi bi-instagram"></i></a>
+       </div>
+       <div class="socia">
+         <a href="https://www.instagram.com/"><i class="bi bi-facebook"></i></a>
+       </div>
+       <div class="socia">
+         <a href="https://www.whatsapp.facebook.com/"><i class="bi bi-whatsapp"></i></a>
+       </div>
+       <div class="socia">
+         <a href="https://www.twitter.com/"><i class="bi bi-twitter"></i></a>
+       </div>
+       <p class="desevolve">Desevolvido por Abreus Silvano</p>
+     </div>
+   </div>
+   </div>
 </body>
 </html>
