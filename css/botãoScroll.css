@@ -33,3 +33,64 @@
 form input.control{
     height: 40px;
 }
+/* Menu aside */
+.menu .ul-menu{
+    list-style: none;
+    text-transform: uppercase;
+    margin-top: -20px;
+    margin-left: 50px;
+ 
+}
+.menu .li-menu{
+   display: inline-block;
+   background: linear-gradient(to right,#00e0fe, #1107fe); 
+   transition: all 0.2s;
+   
+}
+.menu .li-menu:hover{
+    box-shadow: 0px 0px 50px #1107fe;
+    padding: 8px;
+    color: #fe0000;
+ }
+ 
+.menu .li-menu a{
+     color: #fff;
+     font-size: 18px;
+     text-decoration: none;
+     margin: 10px;
+ }
+  /* texto senction */
+  .cv-item{
+      padding: 0 0 20px 20px;
+      margin-top: -2px;
+      border-left: 1px solid #000000;
+      position: relative;
+  }
+  .cv-item::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -5px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #1107fe;
+    background: #000000;
+    border-radius: 50%;
+}
+ 
+   
+ 
+  .cv-item .link-listas{
+      font-family: Verdana, Tahoma,;
+      color: #fe0000;
+      display: block;
+      text-decoration: none;
+      transition: all 0.2S ease-out;
+  }
+  .cv-item .link-listas:hover{
+   color: #1107fe;
+   text-decoration: overline;
+}
+  .senction-text{
+      margin-top: 50px;
+  }
