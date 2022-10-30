@@ -27,7 +27,7 @@ body h5{
   font-family: 'Bebas Neue', cursive;
 }
  section.cabeçalho-celulares{
-   height: 560px;
+   height: 590px;
  }
 section.cabeçalho-top{
   margin-top: 70px;
@@ -109,10 +109,7 @@ div.offcanvas-header{
  .modal-central{
   margin-left: auto;
 }
-.modal-header{
-  background: linear-gradient(to right, #FFC500, #1107fe);
-  height: 90px;
-}
+ 
 p.card-paraf{
   font-size: 10px;
   font-family:  'Oswald', sans-serif;

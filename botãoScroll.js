@@ -1,6 +1,6 @@
 const botãoScrooll = document.querySelector('[ data-anima="scroll"]');
 
-const metadewindow = window.innerHeight * 17.0;
+const metadewindow = window.innerHeight * 23.0;
  
  function animarScroll(){
 const topitem = botãoScrooll.getBoundingClientRect().top;
