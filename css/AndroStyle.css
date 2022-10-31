@@ -38,6 +38,9 @@ div.offcanvas-header{
     background: linear-gradient(to right,#00e0fe, #1107fe); 
     color: #FFFFFF;
   }
+  .modal-header{
+    background: linear-gradient(to right, #FFC500, #1107fe);
+  }
  .favoritosbox, .favoritoslink{
    display: flex;
    align-items: center;
