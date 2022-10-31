@@ -94,4 +94,47 @@ form input.control{
   .senction-text{
       margin-top: 50px;
   }
- 
+ /* botão whatsApp */
+ #div-fixa{
+     position: fixed;
+     bottom: 10px;
+     margin: 0 20px;
+     background: rgba( 89, 245, 122);
+     width: 250px;
+     border-radius: 50px;
+     cursor: pointer;
+     z-index: 9999999;
+ }
+ #div-fixa a .flex-items{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+#div-fixa a .flex-items, span{
+    margin-left: 8px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: bold;
+    color: #fff;
+ }
+ #div-fixa .whatsApp{
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+}
+.flutares{
+animation-name: flutares;
+animation-duration: 0.7s;
+animation-iteration-count:  infinite;
+animation-direction: alternate;
+animation-timing-function: ease-in-out;
+}
+@keyframes flutares{
+    from{
+    transform: translate3d(0,0,0);
+    filter: brightness(100%);
+    }
+    to{
+        transform: translate3d(0,-15px,0);
+        filter: brightness(150%);
+    }
+}
