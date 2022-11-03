@@ -100,26 +100,41 @@ form input.control{
      bottom: 10px;
      margin: 0 20px;
      background: rgba( 89, 245, 122);
-     width: 250px;
+     width: 230px;
      border-radius: 50px;
      cursor: pointer;
      z-index: 9999999;
- }
+     transition: 0.5s all;
+    }
+
+    #div-fixa.shrink{
+        width: 50px;
+        transition: 0.5s all;
+        overflow: hidden;
+    } 
+
  #div-fixa a .flex-items{
    display: flex;
    align-items: center;
    justify-content: center;
+ 
 }
 #div-fixa a .flex-items, span{
-    margin-left: 8px;
+    display: inline-block;
+    margin-left: 5px;
     font-family: 'Roboto',sans-serif;
     font-weight: bold;
-    color: #fff;
+    color: #fe0000;
+    min-width: 170px;
+    opacity: 0;
+ }
+ #div-fixa a .flex-items, span.aparecer{
+    transition: 0.5s all;
+    opacity: 1;
  }
  #div-fixa .whatsApp{
      width: 50px;
-     height: 50px;
-     border-radius: 50%;
+     border-radius: 80%;
 }
 .flutares{
 animation-name: flutares;
