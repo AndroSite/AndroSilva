@@ -87,22 +87,13 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#" style="color: #1107fe;">Serviço</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Sobre nos.html" target="_blank" style="color: #1107fe;"><i class="bi bi-telephone" style="color: #1107fe;"> Contactos</i></a>
+          </li>
           
           <li class="nav-item">
             <a class="nav-link" href="#ferramenta" style="color:#1107fe;">ferramentas</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="bi bi-telephone" style="color: #1107fe;"> Contactos</i>
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          
         </ul>
         <form class="d-flex form "method="get" action="https://www.google.com.br/search?q=" target="_blank">
           <input class="form-control control   me-2" type="search" placeholder="Procurar por" aria-label="Search"><i class="bi bi-search pesquisar"></i>
@@ -116,7 +107,7 @@
        <div class="modal fade ms-auto modal-fullscreen-sm-down" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
          <div class="modal-dialog">
            <div class="modal-content">
-             <div class="modal-header">
+             <div class="modal-header modal-cabeçahlo">
 
                <div class="container">
                  <div class="row">
@@ -179,7 +170,7 @@
  </div>
     <section class="bg-conver cabeçalho-celulares" style="background-image: url(./imagens/fastboot.1280x600.jpg);">
       <div class="overle"></div>
-      <main class="container">
+      <main class="container-fluid">
          <div class="container">
           <div class="row">
             <h2 class="fs-1 mt-3 fw-bold text-white">As qualidades dos Smartphone</h2>
@@ -233,7 +224,7 @@
         
       </main>
     </section>
-      <section class="container">
+      <section class="container corpo-sention">
         <main>
       <div class="row">
           <div class="col-md-3" data-aos="fade-up">
@@ -1411,7 +1402,7 @@ utilizador apenas tem de ligar o dispositivo ao PC e depois seguir os passos ind
     Basta fazer o download do software indicado para o modelo de seu aparelho na lista <i class="bi bi-arrow-right-circle-fill fs-4" style="color:#1107fe ;"></i>
    </p>
    <div class="videos contaiener-fluid text-center">
-    <iframe class="shadow " width="560" height="315" src=".." frameborder="0" allow="acceleromater; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+    <iframe class="shadow container " width="560" height="515" src=".." frameborder="0" allow="acceleromater; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
    <div class="text-center">
      <a href="#">ver mais tutorial no nosso canal</a> <br>
      <a href="#"><i class="bi bi-youtube fs-1" style="color: #fe0707;"></i></a>
@@ -1472,17 +1463,24 @@ utilizador apenas tem de ligar o dispositivo ao PC e depois seguir os passos ind
       <hr>
       <div class="container-fluid mt-3">
         <div class="container mt-4">
-          <h2 class="fw-bold mt-2">Suporte para os sitema-operaciona (OS)</h2>
+         <div class="row">
+           <div class="col-md-8">
+            <h2 class="fw-bold mt-2">Suporte para os sitema-operaciona (OS)</h2>
           
-<p class="fw-bold">1. Windows XP (Tool support also 32-bit and 64-bit)</p>
-
-<p class="fw-bold">2. Windows 7 (Tool support also 32-bit and 64-bit).</p>
-
-<p class="fw-bold">3. Windows 8 (Tool support also 32-bit and 64-bit).</p>
-
-<p class="fw-bold">4. Windows 10 (Tool support also 32-bit and 64-bit)</p>
-
-<p class="fw-bold">5. Windows 11 (Tool support also 32-bit and 64-bit)</p>
+            <p class="fw-bold">1. Windows XP (Tool support also 32-bit and 64-bit)</p>
+            
+            <p class="fw-bold">2. Windows 7 (Tool support also 32-bit and 64-bit).</p>
+            
+            <p class="fw-bold">3. Windows 8 (Tool support also 32-bit and 64-bit).</p>
+            
+            <p class="fw-bold">4. Windows 10 (Tool support also 32-bit and 64-bit)</p>
+            
+            <p class="fw-bold">5. Windows 11 (Tool support also 32-bit and 64-bit)</p>
+           </div>
+           <div class="col-md-4">
+            <img src="./windows.png" alt="window">
+           </div>
+         </div>
         </div>
         <div class="aviso-lista mt-5">
           <h3 class="mt-3 fw-bold">Huawei flashing error</h3>
@@ -1737,18 +1735,18 @@ utilizador apenas tem de ligar o dispositivo ao PC e depois seguir os passos ind
                 </div>
                  <div class="row">
                      <div class="col-md-8 mx-auto">
-                         <form action="#" class="row g-4">
+                         <form action="./php/enviar-email.php" method="POST" class="row g-4">
                              <div class="form-group col-md-6">
-                              <input type="text" class="form-control" placeholder="Nome">
+                              <input type="text" name="nome" class="form-control" placeholder="Nome">
                              </div>
                              <div class="form-group col-md-6">
-                              <input type="email" class="form-control" placeholder="Email">
+                              <input type="email" name="email" class="form-control" placeholder="Email">
                              </div>
                              <div class="form-group col-md-12">
                               <input type="text" class="form-control" placeholder="Objectivos">
                              </div>
                              <div class="form-group col-md-12">
-                              <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Deixe a sua menssagem"></textarea>
+                              <textarea name="mensagem" id="" cols="30" rows="10" class="form-control" placeholder="Deixe a sua mensagem...!"></textarea>
                              </div>
                              <div class="text-center" style="text-align: center;">
                               <button class="btn btn-main text-center" type="submit">Enviar</button>
@@ -1760,7 +1758,7 @@ utilizador apenas tem de ligar o dispositivo ao PC e depois seguir os passos ind
               </div>
   
    </section>
-    <footer>
+    <footer class="mt-2">
       <div class="boxs" >
         <h2>Início</h2>
         <ul>
@@ -1809,15 +1807,17 @@ utilizador apenas tem de ligar o dispositivo ao PC e depois seguir os passos ind
       <div data-scroll="suave" data-anima="scroll">
         <a href="#topo">
           <div class="topo">
-            <img src="./seta-para-acima (1).png" class="ceta-acima" alt="voltar para topo">
+            <i class="bi bi-arrow-up-circle-fill  ceta-acima"></i>
           </div>
         </a>
 
       </div>
       <div id="div-fixa" class="flutares" data-shrink="yes">
-        <a href="https://www.whatsapp.com" target="_blank"></a>
+        
         <div class="flex-items">
+          <a href="https://www.whatsapp.com" class="text-decoration-none" target="_blank">
           <img src="./imagens/whatsApp.png" class="whatsApp" alt="chamar o whatsApp">
+          </a>
             <span>Fale connosco...!</sapn>
         </div>
       </div>
