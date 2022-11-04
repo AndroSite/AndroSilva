@@ -33,7 +33,9 @@ section.cabeçalho-top{
   margin-top: 70px;
   width: 350px;
 }
-  
+.card-cente{
+  margin-left:180px ;
+}
 div.offcanvas-header{
     background: linear-gradient(to right,#00e0fe, #1107fe); 
     color: #FFFFFF;
