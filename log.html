@@ -1343,18 +1343,19 @@ Tem uma enorme tela Touchscreen de 6.5 polegadas com uma resolução de 1600x720
                 </div>
                  <div class="row">
                      <div class="col-md-8 mx-auto">
-                         <form action="./php/enviar-email.php" method="POST" class="row g-4">
+                         <form action="https://api.staticforms.xyz/submit" method="post"  class="row g-4">
+                          <input type="hidden" name="accessKey" value="0cfc6a61-c216-4a7d-857d-6f1a20e18967">
                              <div class="form-group col-md-6">
-                              <input type="text" name="nome" class="form-control" placeholder="Nome">
+                              <input type="text" name="name" class="form-control" placeholder="Nome">
                              </div>
                              <div class="form-group col-md-6">
                               <input type="email" name="email" class="form-control" placeholder="Email">
                              </div>
                              <div class="form-group col-md-12">
-                              <input type="text" class="form-control" placeholder="Objectivos">
+                              <input type="text"  name="subject" class="form-control" placeholder="Objectivos">
                              </div>
                              <div class="form-group col-md-12">
-                              <textarea name="mensagem" id="" cols="30" rows="10" class="form-control" placeholder="Deixe a sua mensagem...!"></textarea>
+                              <textarea name="message" id="" cols="30" rows="10" class="form-control" placeholder="Deixe a sua mensagem...!"></textarea>
                              </div>
                              <div class="text-center" style="text-align: center;">
                               <button class="btn btn-main text-center" type="submit">Enviar</button>
