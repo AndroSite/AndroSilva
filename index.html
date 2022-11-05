@@ -43,116 +43,116 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar-example">
-  <nav class="navbar navbar-light bg-light   shadow modal-header Menu-principal"  data-aos="fade-up"> 
-      <nav class="navbar navbar-expand-lg  navbar-light bg-light  modal-header  Menu-principal">
-        <div class="container-fluid ">
-          <div class="fundo-lateral">
-            <div class="textos-lateral">
-              <h6 id='logado'></h6>
-              <p class="text-white ms-2">Seja bem vindo no site</p>
-              <h5 class="ms-2">Androsilva tudo sobre Android</h5>
-            <button onclick=" sair()" class="logando ms-1">sair</button>
-            <script>
-               if (localStorage.getItem('token') == null) {
-         alert('Você precisa estar logado para acessar essa página')
-         window.location.href='https://androsilva.github.io/AndroSilva/log.html'
-     } 
-
-     function  saier(){
-         localStorage.removeItem('token')
-         window.location.href='https://androsilva.github.io/AndroSilva/log.html'
-     }
-            </script>
+    <header class="cabeçalho-principal">
+      <nav class="navbar navbar-light bg-light   shadow modal-header Menu-principal"  data-aos="fade-up"> 
+        <nav class="navbar navbar-expand-lg  navbar-light bg-light  modal-header  Menu-principal">
+          <div class="container-fluid ">
+            <div class="fundo-lateral">
+              <div class="textos-lateral">
+                <h6 id='logado'></h6>
+                <p class="text-white ms-2">Seja bem vindo no site</p>
+                <h5 class="ms-2">Androsilva tudo sobre Android</h5>
+              <button onclick=" sair()" class="logando ms-1">sair</button>
+              <script>
+                 if (localStorage.getItem('token') == null) {
+           alert('Você precisa estar logado para acessar essa página')
+           window.location.href='https://androsilva.github.io/AndroSilva/log.html'
+       } 
+  
+       function  saier(){
+           localStorage.removeItem('token')
+           window.location.href='https://androsilva.github.io/AndroSilva/log.html'
+       }
+              </script>
+              </div>
+            </div>
+            <a class="navbar-brand" href="#" style="color:#04357e;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color:#04357e;">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="log.html"><i class="bi bi-house fs-3" style="color: #000000;"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#SobreNos" scrollspyHeading1 style="color: #000000;">Sobre Nós</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#introdução" scrollspyHeading1 style="color: #000000;">Introdução</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Novidades" scrollspyHeading2 style="color: #000000;">Novidades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Atualização"scrollspyHeading3 style="color: #000000;">Atualização</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Smartphone"scrollspyHeading4 style="color: #000000;">Smartphone</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="ferramenta.html" target="_blank" scrollspyHeading6 style="color: #000000;">Sobre Android</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Versão"scrollspyHeading7 style="color: #000000;">Versão</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Favoritos"scrollspyHeading8 style="color: #000000;">Favoritos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Contactos"scrollspyHeading9 style="color: #000000;">Contactos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#localização"scrollspyHeading10 style="color: #000000;">Localização</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="" tabindex="-1" aria-disabled="true"></a>
+                </li>
+              </ul>
             </div>
           </div>
-          <a class="navbar-brand" href="#" style="color:#04357e;"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color:#04357e;">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto" role="tablist">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="log.html"><i class="bi bi-house fs-3" style="color: #000000;"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#SobreNos" scrollspyHeading1 style="color: #000000;">Sobre Nós</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#introdução" scrollspyHeading1 style="color: #000000;">Introdução</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Novidades" scrollspyHeading2 style="color: #000000;">Novidades</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Atualização"scrollspyHeading3 style="color: #000000;">Atualização</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Smartphone"scrollspyHeading4 style="color: #000000;">Smartphone</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="ferramenta.html" target="_blank" scrollspyHeading6 style="color: #000000;">Sobre Android</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Versão"scrollspyHeading7 style="color: #000000;">Versão</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Favoritos"scrollspyHeading8 style="color: #000000;">Favoritos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Contactos"scrollspyHeading9 style="color: #000000;">Contactos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#localização"scrollspyHeading10 style="color: #000000;">Localização</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="" tabindex="-1" aria-disabled="true"></a>
-              </li>
-            </ul>
+        </nav>
+      </div>
+      
+    </nav>
+  <div class="modal menu-anborg fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content content-anborg">
+        <div class="modal-header mt-5">
+          <h5 class="modal-title" id="exampleModalLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="nossa loja.html" class="text-decoration-none" target="_blank">Nossa loja</a></li>
+            <li class="list-group-item"><a href="#SobreNos"class="text-decoration-none" target="_blank">Sobre nos</a></li>
+            <li class="list-group-item"><a href="#introdução"class="text-decoration-none" target="_blank">introdução</a></li>
+            <li class="list-group-item"><a href="#Novidades"class="text-decoration-none" target="_blank">Novidades</a></li>
+            <li class="list-group-item"><a href="#Atualização"class="text-decoration-none" target="_blank">Atualização</a></li>
+          </ul>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#Smartphone"class="text-decoration-none" target="_blank">Smartphone</a></li>
+            <li class="list-group-item"><a href="#Versão"class="text-decoration-none" target="_blank">Versão</a></li>
+            <li class="list-group-item"><a href="#Favoritos"class="text-decoration-none" target="_blank">Favoritos</a></li>
+            <li class="list-group-item"><a href="#localização"class="text-decoration-none" target="_blank">Redes socias</a></li>
+            <li class="list-group-item"><a href="#Contactos"class="text-decoration-none" target="_blank">Contactos</a></li>
+          </ul>
+        </div>
+        <div class="container">
+         <h5>Tecnico</h5>
+          <div class="row">
+            <p>
+              Depoiador na ária tecnica de informática, Tais como computador, celular android
+            </p>
+            <a href="#"class="text-decoration-none">Nosso canal no YouTube</a>
           </div>
         </div>
-      </nav>
-    </div>
-    
-  </nav>
-<div class="modal menu-anborg fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-fullscreen">
-    <div class="modal-content content-anborg">
-      <div class="modal-header mt-5">
-        <h5 class="modal-title" id="exampleModalLabel">Menu</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item"><a href="nossa loja.html" class="text-decoration-none" target="_blank">Nossa loja</a></li>
-          <li class="list-group-item"><a href="#SobreNos"class="text-decoration-none" target="_blank">Sobre nos</a></li>
-          <li class="list-group-item"><a href="#introdução"class="text-decoration-none" target="_blank">introdução</a></li>
-          <li class="list-group-item"><a href="#Novidades"class="text-decoration-none" target="_blank">Novidades</a></li>
-          <li class="list-group-item"><a href="#Atualização"class="text-decoration-none" target="_blank">Atualização</a></li>
-        </ul>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item"><a href="#Smartphone"class="text-decoration-none" target="_blank">Smartphone</a></li>
-          <li class="list-group-item"><a href="#Versão"class="text-decoration-none" target="_blank">Versão</a></li>
-          <li class="list-group-item"><a href="#Favoritos"class="text-decoration-none" target="_blank">Favoritos</a></li>
-          <li class="list-group-item"><a href="#localização"class="text-decoration-none" target="_blank">Redes socias</a></li>
-          <li class="list-group-item"><a href="#Contactos"class="text-decoration-none" target="_blank">Contactos</a></li>
-        </ul>
-      </div>
-      <div class="container">
-       <h5>Tecnico</h5>
-        <div class="row">
-          <p>
-            Depoiador na ária tecnica de informática, Tais como computador, celular android
-          </p>
-          <a href="#"class="text-decoration-none">Nosso canal no YouTube</a>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
-</div>
-    <header class="cabeçalho-principal">
         <section id="home" style="background-image: url(./pc_01.jpg);" class="bg-conver">
           <div class="overlay"></div>
             <section class="container senction-top  ">
