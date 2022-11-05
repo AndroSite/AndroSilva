@@ -131,8 +131,11 @@ i.icones{
   font-family:'Oswald', sans-serif ;
 }
  .li-item .link-item{
-   color: #FFFFFF;
+   color: #072859;
   display: inline-block;
+}
+.list-group-item{
+  color: #072859;
 }
 .desplay-flex{
   display: flex;
