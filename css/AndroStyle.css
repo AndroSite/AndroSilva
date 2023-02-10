@@ -26,6 +26,63 @@ body h4{
 body h5{
   font-family: 'Bebas Neue', cursive;
 }
+/* Textos animados */
+body  main.texto-animado{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main.texto-animado .contentes{
+display: inline-flex;
+}
+.contentes .estatico{
+  color: #1107fe;
+  font-size: 40px;
+  font-weight: 400px;
+}
+.contentes .dinamico{
+ margin-left: 15px;
+ line-height: 90px;
+ height: 90px;
+ overflow: hidden;
+}
+.dinamico li{
+ color: #DC3545;
+ list-style: none;
+ font-size: 40px;
+ font-weight: 500;
+ left: 0;
+ position: relative;
+ top: 0;
+ animation: slide 6s steps(4) infinite;
+ }
+ @keyframes slide{
+  100%{
+    top: -360px;
+  }
+}
+.dinamico li samp::after{
+content: " ";
+position: absolute;
+ width: 100%;
+ height: 100px;
+ left: 0;
+ border-left: 2px solid #ffff;
+ animation: typing 1.5s steps(10) infinite;
+ background: #ffff;
+ }
+ .dinamico li samp{
+  position: relative; 
+   }
+
+   @keyframes typing{
+     100%{
+       left: 170%;
+       margin: 0 -35px 35px;
+     }
+   }
+  
+/* fim de texto animado */
  section.cabeçalho-celulares{
    height: 590px;
  }
@@ -307,6 +364,9 @@ height: 54px;
        height: 100%;
        background: linear-gradient(to right,#00e0fe95, #0f07fe76);
        z-index: -1;
+     }
+     .main-img{
+      height: 150px;
      }
      .overle{
       position: absolute;

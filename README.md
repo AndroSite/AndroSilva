@@ -1,2 +1,0 @@
-# AndroSilva
- tudo sobre android
